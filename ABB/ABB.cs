@@ -29,9 +29,8 @@ namespace ABB
             return raiz;
         }
 
-        public void ShowTree(string prefix = "", bool isLeft = true)
+        public void ShowTree(Node node, string prefix = "", bool isLeft = true)
         {
-            Node node = raiz;
             if (node != null)
             {
                 Console.WriteLine($"{prefix} {(isLeft ? "├──" : "└──")} {node.dato}");
